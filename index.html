@@ -41,6 +41,7 @@
 									<div class="Periood">с 11:00 до 12:00</div>
 								</div>
 							</li>
+							<div class="line"></div>
 						</ul>
 					</div>
 				</div>
@@ -88,9 +89,9 @@
 											пробирка с голубой крышкой
 										</div>
 									</div>
-
 								</div>
 							</li>
+							<div class="line"></div>
 						</ul>
 					</div>
 				</div>
@@ -125,5 +126,23 @@
 				</ul>
 			</div>
 		</div>
+		<script>
+			const listCard = document.querySelectorAll(".card-ul")
+			const line = document.querySelectorAll('.line')
+			const listCildren= listCard
+			let heightLine = [0,0]
+			const givHeights = ()=>{
+				for(let i=0; i<listCard.length; i++){
+					heightLine[i]=0
+					for(let j=0; j<listCildren[i].children.length-2;j++){
+						heightLine[i]+= listCildren[i].children[j].scrollHeight-5
+					}
+					console.log(line[i].style.height = `${heightLine[i]}px`)
+				}
+			}
+		givHeights()
+		window.onresize = givHeights;
+
+		</script>
 	</body>
 </html>
