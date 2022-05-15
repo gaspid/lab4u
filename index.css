@@ -251,4 +251,8 @@ header {
 	.Numberlist {
 		font-size: 20px;
 	}
+	.varning {
+		position: relative;
+		left: 10px;	
+	}
 }
