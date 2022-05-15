@@ -137,6 +137,7 @@ header {
 }
 .datetime div:last-child {
 	color: var(--color-dim);
+	font-size: 18px;
 }
 .flask-conteiner {
 	background-color: var(--colot-bg);
@@ -164,7 +165,7 @@ header {
 	color: #000;
 	border: solid 2px #000;
 	position: absolute;
-	margin: 0 0 7px 10px;
+	margin: 0 0 120px 10px;
 }
 .bg {
 	width: 100%;
@@ -227,9 +228,27 @@ header {
 @media (max-width: 799px) {
 	.Card {
 		width: 100%;
+		padding: 0;
 		margin: 7px;
+	}
+	.Card ul {
+		padding-left: 25px;
 	}
 	.instructions-list li {
 		width: 100%;
+	}
+	.test-instructions {
+		padding: 10px 10px;
+	}
+}
+
+@media (max-width: 450px) {
+	.Logo {
+		position: relative;
+		bottom: 48px;
+		left: 18px;
+	}
+	.Numberlist {
+		font-size: 20px;
 	}
 }
