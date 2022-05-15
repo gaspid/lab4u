@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+	--color-black: #333333;
+	--color-dim: #999999;
+	--color-link: ##226688;
+	--colot-bg: #eaeaea;
+	--color-sec: #00aacc;
+}
+
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	justify-content: center;
+	color: var(--color-black);
+}
+.conteiner {
+	width: 800px;
+}
+header {
+	display: flex;
+	padding: 25px 41px 0 40px;
+	justify-content: space-between;
+}
+.Nummer {
+	padding-top: 18px;
+	font-weight: 300;
+	font-size: 30px;
+}
+.Numberlist {
+	padding-top: 5px;
+}
+.Card-info-conteiner {
+	display: flex;
+	padding: 28px 22px;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.Logo {
+	display: flex;
+}
+.Card {
+	width: 368px;
+	background-color: rgba(244, 244, 244, 0.63);
+	border-radius: 15px;
+	padding: 15px 0;
+}
+.Adresse {
+	padding-top: 15px;
+	color: var(--color-dim);
+	font-size: 18px;
+}
+
+.card-ul {
+	display: grid;
+	grid-template-columns: 0.25rem 1fr;
+	grid-auto-columns: max-content;
+	column-gap: 0.5rem;
+	list-style: none;
+	width: min(60rem, 90%);
+	margin-inline: auto;
+}
+.card-ul li {
+	position: relative;
+	padding: 13px;
+	font-size: 25px;
+	font-weight: 400;
+}
+.li-dek li::before {
+	content: '';
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	background-color: var(--color-sec);
+	position: absolute;
+	left: -16.5px;
+	top: 20px;
+}
+.card-ul li:first-child {
+	font-weight: 500;
+}
+
+.card-ul li:first-child::before {
+	content: 'i';
+	font-size: 15px;
+	width: 22px;
+	height: 22px;
+	left: -20.5px;
+	color: #fff;
+	text-align: center;
+}
+
+.card-ul::before {
+	content: '';
+	grid-column: 1;
+	grid-row: 1/20;
+	background: var(--color-sec);
+	border-radius: calc(0.25rem / 2);
+}
+.Time-conteiner {
+	border: solid 1px var(--color-dim);
+	border-radius: 25px;
+	width: 216px;
+	height: 172px;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	position: relative;
+	top: 25px;
+}
+.Periood {
+	border: 1px solid #eee;
+	background-color: var(--color-sec);
+	height: 47px;
+	width: 100%;
+	position: relative;
+	top: 0.75px;
+	border-radius: 0 0 24px 24px;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 23px;
+	line-height: 30px;
+	margin-top: 5px;
+}
+.datetime {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.datetime div:first-child {
+	font-size: 50px;
+}
+.datetime div:last-child {
+	color: var(--color-dim);
+}
+.flask-conteiner {
+	background-color: var(--colot-bg);
+	border-radius: 8px;
+	display: flex;
+	width: 250px;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+.flask {
+	color: #666666;
+	font-size: 11px;
+	display: flex;
+	flex-direction: column;
+	width: 60px;
+	padding: 8px;
+}
+.caunt {
+	background-color: #fff;
+	border-radius: 5px;
+	width: 44px;
+	height: 32px;
+	font-weight: 700;
+	font-size: 25px;
+	color: #000;
+	border: solid 2px #000;
+}
+.bg {
+	width: 100%;
+	height: 2px;
+	background-color: #eeeeee;
+}
+.test-instructions {
+	display: flex;
+	flex-direction: column;
+	padding: 30px 0 0 50px;
+}
+.varning {
+	display: flex;
+	align-items: center;
+	font-weight: 500;
+	font-size: 25px;
+}
+.varning .i {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 10px 0 0;
+	width: 33px;
+	height: 33px;
+	background: var(--color-sec);
+	border-radius: 50%;
+	color: #fff;
+	font-size: 18px;
+}
+.ps {
+	color: #666666;
+	font-size: 15px;
+	padding-top: 5px;
+	line-height: 25px;
+}
+.instructions-list {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+}
+
+.instructions-list li {
+	width: 600px;
+	padding-top: 15px;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.instructions-list li::before {
+	content: '';
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	background-color: var(--color-sec);
+	position: absolute;
+	margin-left: -30px;
+	margin-top: 3px;
+}
+
+@media (max-width: 799px) {
+	.Card {
+		width: 100%;
+		margin: 7px;
+	}
+	.instructions-list li {
+		width: 100%;
+	}
+}
