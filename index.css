@@ -163,6 +163,8 @@ header {
 	font-size: 25px;
 	color: #000;
 	border: solid 2px #000;
+	position: absolute;
+	margin: 0 0 7px 10px;
 }
 .bg {
 	width: 100%;
